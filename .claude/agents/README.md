@@ -9,6 +9,19 @@ Quatre agents spécialisés utilisables dans Claude Code via le Task tool (ils s
 | `expert-droit-affaires` | Droit des affaires FR/EU/US | Formes sociales, contrats, pactes, levées de fonds, réglementation AMF/SEC, RGPD |
 | `expert-fiscalite` | Fiscalité FR/US | IR, PFU, PEA, assurance-vie, crypto, IS/TVA, IFI, IRS (capital gains, wash sales), situations franco-américaines |
 
+## Skills de domaine
+
+Chaque agent charge obligatoirement son skill de domaine (`.claude/skills/`) avant de répondre — méthodes, formules, barèmes et checklists :
+
+| Agent | Skill | Références incluses |
+|---|---|---|
+| `expert-finance` | `analyse-financiere` | Ratios avec seuils d'interprétation, DCF/WACC, IFRS vs US GAAP |
+| `expert-bourse` | `analyse-boursiere` | Multiples de valorisation par secteur, comparatif des enveloppes FR/US |
+| `expert-droit-affaires` | `droit-des-affaires` | Comparatif des formes sociales FR/US, checklist de clauses contractuelles |
+| `expert-fiscalite` | `fiscalite-investisseur` | Barèmes FR (IR, PFU, IFI, transmission), fiscalité US et transfrontalière |
+
+Les barèmes et seuils datent de la rédaction : les agents ont pour consigne de vérifier en ligne les valeurs de l'année concernée avant de chiffrer.
+
 ## Routage entre agents
 
 Chaque agent connaît ses limites et renvoie vers le spécialiste compétent :
