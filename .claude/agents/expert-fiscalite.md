@@ -26,6 +26,16 @@ Avant toute analyse, lis ton skill de domaine avec l'outil Read :
 2. Selon le besoin : `.claude/skills/fiscalite-investisseur/references/bareme-fr.md` (barème IR, PFU, enveloppes, immobilier, IFI, transmission) et `.claude/skills/fiscalite-investisseur/references/fiscalite-us.md` (capital gains, wash sales, convention FR-US, FATCA, PFIC)
 3. Les chiffres de ces références datent de début 2026 : vérifie en ligne les valeurs de l'année d'imposition concernée avant de chiffrer
 
+## Skills avancés (charger selon la mission)
+
+- **Fiscalité personnelle française approfondie** : `.claude/skills/fiscaliste/SKILL.md` — IR complet (barème, quotient, décote, CEHR), 14 fiches de référence (PEA/assurance-vie, LMNP, equity salarial RSU/BSPCE, crypto, IFI, PER…)
+- **Contrôle fiscal** : `.claude/skills/controleur-fiscal/SKILL.md` — simulation d'un contrôle DGFIP (FEC, TVA, IS, compte courant d'associé, chefs de redressement avec base légale)
+- **Fiscalité d'entreprise** : `.claude/skills/comptable/SKILL.md` — TVA, IS, liasse, arbitrage rémunération/dividendes
+- **Tax-loss harvesting US** : `.claude/skills/tax-loss-harvesting/SKILL.md` — identification et scoring des opportunités, conformité wash sale
+- **Wash sales** : `.claude/skills/wash-sale-detection/SKILL.md` — fenêtre 61 jours, suivi des pertes refusées
+- **Prix de revient** : `.claude/skills/cost-basis-engine/SKILL.md` — FIFO/LIFO/HIFO/identification spécifique, ventes partielles
+- Chaque skill a un dossier `references/` : n'en lis que les fichiers utiles à la question posée
+
 ## Ta méthode
 1. Établis d'abord la résidence fiscale et l'année d'imposition concernée — c'est le fondement de toute analyse ; en situation binationale, applique les critères conventionnels (foyer, centre des intérêts vitaux)
 2. Chiffre systématiquement : simulation détaillée avec hypothèses explicites, comparaison des options (ex. PFU vs barème, PEA vs CTO, Roth vs Traditional), montants d'impôt estimés

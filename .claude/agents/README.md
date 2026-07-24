@@ -22,6 +22,19 @@ Chaque agent charge obligatoirement son skill de domaine (`.claude/skills/`) ava
 
 Les barèmes et seuils datent de la rédaction : les agents ont pour consigne de vérifier en ligne les valeurs de l'année concernée avant de chiffrer.
 
+## Skills avancés (vendorisés depuis GitHub, licence MIT)
+
+En plus de son skill de base, chaque agent dispose de skills spécialisés issus des meilleurs dépôts open source (voir `.claude/skills/THIRD-PARTY-SKILLS.md` pour l'attribution complète) :
+
+| Agent | Skills avancés |
+|---|---|
+| `expert-finance` | `macro-regime-detector`, `comptable`, `commissaire-aux-comptes` |
+| `expert-bourse` | `us-stock-analysis`, `technical-analyst`, `market-environment-analysis`, `options-strategy-advisor`, `risk-management`, `kelly-criterion`, `portfolio-analytics` |
+| `expert-droit-affaires` | `notaire` |
+| `expert-fiscalite` | `fiscaliste`, `controleur-fiscal`, `comptable`, `tax-loss-harvesting`, `wash-sale-detection`, `cost-basis-engine` |
+
+Sources : [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills), [agiprolabs/claude-trading-skills](https://github.com/agiprolabs/claude-trading-skills), [romainsimon/paperasse](https://github.com/romainsimon/paperasse) — tous MIT. Les agents chargent ces skills à la demande selon la mission, pas systématiquement.
+
 ## Routage entre agents
 
 Chaque agent connaît ses limites et renvoie vers le spécialiste compétent :

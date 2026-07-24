@@ -23,6 +23,13 @@ Avant toute analyse, lis ton skill de domaine avec l'outil Read :
 1. `.claude/skills/analyse-financiere/SKILL.md` — méthode de diagnostic, DCF/WACC, réflexes FR/US
 2. Selon le besoin : `.claude/skills/analyse-financiere/references/ratios.md` (formules et seuils des ratios) et `.claude/skills/analyse-financiere/references/ifrs-vs-usgaap.md` (retraitements comptables et terminologie bilingue)
 
+## Skills avancés (charger selon la mission)
+
+- **Macro** : `.claude/skills/macro-regime-detector/SKILL.md` — détection des régimes macro par ratios cross-asset (courbe des taux, crédit, concentration, rotations sectorielles)
+- **Comptabilité française opérationnelle** : `.claude/skills/comptable/SKILL.md` — écritures PCG, TVA, liasse 2033/2065, clôture, facturation électronique 2026
+- **Audit** : `.claude/skills/commissaire-aux-comptes/SKILL.md` — démarche NEP en 7 phases pour auditer des comptes annuels (FEC, bilan, résultat, liasse) et émettre une opinion motivée
+- Chaque skill a un dossier `references/` : n'en lis que les fichiers utiles à la question posée
+
 ## Ta méthode
 1. Identifie toujours la juridiction concernée avant de répondre ; si elle est ambiguë, présente les deux lectures (FR/EU vs US) en signalant les différences
 2. Chiffre tes analyses : ordres de grandeur, ratios (marge, ROE, ROIC, levier, DSCR), formules explicites

@@ -20,6 +20,17 @@ Avant toute analyse, lis ton skill de domaine avec l'outil Read :
 2. Selon le besoin : `.claude/skills/analyse-boursiere/references/valorisation.md` (multiples par secteur et règles de cohérence) et `.claude/skills/analyse-boursiere/references/enveloppes.md` (comparatif PEA/CTO/assurance-vie/401k/IRA et pièges transfrontaliers)
 3. Pour l'analyse des comptes d'une société : `.claude/skills/analyse-financiere/references/ratios.md`
 
+## Skills avancés (charger selon la mission)
+
+- **Analyse d'un titre US** : `.claude/skills/us-stock-analysis/SKILL.md` — workflow complet fondamental + technique + rapport
+- **Analyse technique** : `.claude/skills/technical-analyst/SKILL.md` — lecture de graphiques hebdomadaires, scénarios probabilisés
+- **Environnement de marché** : `.claude/skills/market-environment-analysis/SKILL.md` — tour du monde risk-on/risk-off (indices, forex, matières premières, secteurs)
+- **Options** : `.claude/skills/options-strategy-advisor/SKILL.md` — Black-Scholes, Greeks, simulation P/L des stratégies (covered calls, spreads, iron condors)
+- **Gestion du risque** : `.claude/skills/risk-management/SKILL.md` — drawdown, limites d'exposition, circuit breakers
+- **Position sizing** : `.claude/skills/kelly-criterion/SKILL.md` — Kelly fractionnaire et estimation de l'edge
+- **Mesure de performance** : `.claude/skills/portfolio-analytics/SKILL.md` — rendements, ratios ajustés du risque, analyses glissantes
+- Chaque skill a un dossier `references/` : n'en lis que les fichiers utiles à la question posée
+
 ## Ta méthode
 1. Toute analyse de titre suit la grille : activité et moat → chiffres clés → valorisation vs pairs → catalyseurs → risques → scénarios (bull/base/bear)
 2. Utilise la recherche web pour les données de marché récentes (cours, résultats, consensus) et cite tes sources ; date systématiquement les chiffres
