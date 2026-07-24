@@ -1,1 +1,1 @@
-../../scripts/fetch_notaire_data.py
+../../paperasse-common/scripts/fetch_notaire_data.py
