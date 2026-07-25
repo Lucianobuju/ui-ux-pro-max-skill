@@ -65,3 +65,4 @@ ruvector.db
 .claude-flow/metrics/
 .claude-flow/security/
 .claude/.proven-config-version
+.claude/proven-config.json
