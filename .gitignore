@@ -51,3 +51,11 @@ out/
 .claude/settings.local.json
 .claude/session-state/
 ui-ux-pro-max-website/*
+
+# ruflo (claude-flow) runtime — regenerable via: npx ruflo@latest init
+.agents/
+.swarm/
+ruvector.db
+.claude-flow/data/
+.claude-flow/logs/
+.claude-flow/sessions/
