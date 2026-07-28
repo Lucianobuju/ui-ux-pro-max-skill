@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "objectif": "Rentabilité maximale à horizon 5 ans (juillet 2031)",
+    "cree_le": "2026-07-28",
+    "horizon_fin": "2031-07-31",
+    "scenario_budget": "C",
+    "devise_reference": "EUR",
+    "avertissement": "Projections = scénarios, pas des promesses. Aucun rendement garanti."
+  },
+  "allocation_cible": {
+    "SP500": { "poids": 0.65, "support": "BNP Easy S&P 500 ESE", "isin": "FR0011550185", "enveloppe": "PEA", "ter": 0.0014 },
+    "NDX":   { "poids": 0.25, "support": "Amundi PEA Nasdaq-100 PUST", "isin": "FR0011871110", "enveloppe": "PEA", "ter": 0.0030 },
+    "SPCX":  { "poids": 0.10, "support": "SpaceX (titre vif)", "ticker": "SPCX", "enveloppe": "CTO", "place": "Nasdaq" }
+  },
+  "plan_versements": {
+    "initial_eur": 5000,
+    "mensuel_eur": 200,
+    "jour_dca": 5,
+    "deploiement_initial": "2-3 tranches sur 8 semaines pour les indices; SPCX uniquement après le 2026-08-06 (lock-up)",
+    "repartition_mensuelle": { "SP500": 130, "NDX": 50, "SPCX": 20 }
+  },
+  "regles": {
+    "spcx_poids_max": 0.12,
+    "reequilibrage": "annuel en janvier, ou si SPCX > 12% de la poche",
+    "interdits": ["suspendre le DCA en baisse", "vente panique", "moyenne à la baisse sur SPCX si thèse cassée", "levier"],
+    "kill_switch_spcx": "Thèse cassée si: échecs Starship répétés + marges Starlink en dégradation 2 trimestres consécutifs"
+  },
+  "projections_5ans_eur": {
+    "hypotheses_annuelles": { "SP500": { "bear": 0.02, "base": 0.07, "bull": 0.11 }, "NDX": { "bear": 0.00, "base": 0.09, "bull": 0.14 }, "SPCX": { "bear": -0.15, "base": 0.10, "bull": 0.30 } },
+    "total_investi": 17000,
+    "valeur_finale": { "bear": 17080, "base": 21810, "bull": 26605 },
+    "evolution_annuelle": {
+      "annees": [2026, 2027, 2028, 2029, 2030, 2031],
+      "investi": [5000, 7400, 9800, 12200, 14600, 17000],
+      "bear": [5000, 7387, 9785, 12198, 14628, 17080],
+      "base": [5000, 7875, 10974, 14317, 17922, 21810],
+      "bull": [5000, 8229, 11917, 16143, 21001, 26605]
+    }
+  },
+  "positions": [],
+  "historique_suivis": [],
+  "references_marche": {
+    "spcx_prix_ref_usd": 114,
+    "spcx_prix_ipo_usd": 135,
+    "spcx_lockup": "2026-08-06",
+    "spcx_resultats_t2": "2026-08-04",
+    "flat_tax_cto": 0.314,
+    "ps_pea": 0.186
+  }
+}
