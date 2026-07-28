@@ -6,7 +6,17 @@
     "scenario_budget": "B-300-World",
     "devise_reference": "EUR",
     "avertissement": "Projections = scénarios, pas des promesses. Aucun rendement garanti.",
-    "statut": "VERROUILLÉ v1.0 — 2026-07-28. Exécution précisée (eToro pour SPCX, PEA pour indices). Toute modification d'allocation exige une décision explicite de Luciano."
+    "statut": "VERROUILLÉ v1.0 — 2026-07-28. Exécution précisée (eToro pour SPCX, PEA pour indices). Toute modification d'allocation exige une décision explicite de Luciano.",
+    "demarrage_effectif": "2026-08-07/08 — premiers achats (post-résultats T2 du 4/08 et lock-up SPCX du 6/08); DCA le 5 du mois à partir de septembre 2026",
+    "residence_fiscale": {
+      "zone": "Martinique (DROM, France)",
+      "implications": [
+        "PEA, CTO, PFU: règles identiques à la métropole",
+        "Réduction d'impôt DOM de 30% (plafonnée ~2 450 EUR) sur l'IR au barème (art. 197-I-3 CGI) — ne s'applique PAS au PFU 12,8%: l'arbitrage PFU vs barème (case 2OP) doit être re-simulé chaque année par expert-fiscalite, le barème devenant plus compétitif en DOM",
+        "Fuseau UTC-4: les ordres US s'exécutent en après-midi locale, le marché Paris ferme à 11h30 locale"
+      ],
+      "note_confidentialite": "Adresse postale volontairement non stockée dans le dépôt"
+    }
   },
   "allocation_cible": {
     "WORLD": {
