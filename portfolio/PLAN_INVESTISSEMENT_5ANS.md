@@ -13,27 +13,28 @@
 
 Chevauchement assumé : ~80 % du Nasdaq-100 est dans le S&P 500 ; SPCX intégrera probablement le Nasdaq-100. Exposition réelle mega-caps tech ≈ 45-50 %.
 
-## 2. Versements (scénario de référence C)
+## 2. Versements (scénario C, entrée 100 % lissée — décision du 28/07/2026)
 
-- **5 000 € initial** : indices déployés en 2-3 tranches sur 8 semaines (3 200 € ESE / 1 300 € PUST) ; **500 € SPCX uniquement après le 6 août 2026** (résultats T2 le 4/08, expiration lock-up le 6/08)
-- **200 €/mois le 5 du mois** : 130 € ESE / 50 € PUST / 20 € SPCX (fractionné)
+Pas d'injection de capital en une fois : les 5 000 € sont **étalés sur les 12 premiers mois**.
+
+- **Année 1 : 617 €/mois** le 5 du mois (200 € de plan + 416,67 € de capital lissé) → 401 € ESE / 154 € PUST / 62 € SPCX
+- **Années 2 à 5 : 200 €/mois** → 130 € ESE / 50 € PUST / 20 € SPCX (fractionné)
+- Ligne SPCX démarrée **après le 6 août 2026** (résultats T2 le 4/08, expiration lock-up le 6/08)
 - Total investi sur 5 ans : **17 000 €**
 
-Variantes : A (100 €/mois → 85 € ESE + 15 € SPCX, 2 lignes seulement) · B (300 €/mois → 190/80/30)
+Coût du lissage vs injection immédiate : ~290 € d'espérance en scénario de base — le prix de la sérénité, assumé. Variantes : A (100 €/mois → 85 € ESE + 15 € SPCX) · B (300 €/mois → 190/80/30)
 
-## 3. Projections à 5 ans (scénario C)
+## 3. Projections à 5 ans (scénario C lissé)
 
 Hypothèses annuelles : S&P 500 2/7/11 % · Nasdaq-100 0/9/14 % · SPCX −15/+10/+30 % (bear/base/bull)
 
 | Scénario | Valeur 2031 | Gain | Performance |
 |---|---|---|---|
-| 🐻 Bear | 17 080 € | +80 € | +0,5 % |
-| ⚖️ Base | **21 810 €** | **+4 810 €** | **+28,3 %** |
-| 🚀 Bull | 26 605 € | +9 605 € | +56,5 % |
+| 🐻 Bear | 17 062 € | +62 € | +0,4 % |
+| ⚖️ Base | **21 520 €** | **+4 520 €** | **+26,6 %** |
+| 🚀 Bull | 25 902 € | +8 902 € | +52,4 % |
 
-Évolution annuelle (base) : 5 000 → 7 875 → 10 974 → 14 317 → 17 922 → **21 810 €**
-
-Détail par ligne (base) : ESE 11 050 € investis → 13 814 € (+25 %) · PUST 4 250 → 5 660 € (+33 %) · SPCX 1 700 → 2 336 € (+37 %)
+Évolution annuelle (base) : 0 → 7 661 → 10 744 → 14 068 → 17 653 → **21 520 €**
 
 ## 4. Règles de discipline (non négociables)
 
