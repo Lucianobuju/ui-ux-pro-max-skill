@@ -3,7 +3,7 @@
     "objectif": "Rentabilité maximale à horizon 5 ans (juillet 2031)",
     "cree_le": "2026-07-28",
     "horizon_fin": "2031-07-31",
-    "scenario_budget": "C",
+    "scenario_budget": "B-300",
     "devise_reference": "EUR",
     "avertissement": "Projections = scénarios, pas des promesses. Aucun rendement garanti."
   },
@@ -32,20 +32,15 @@
   },
   "plan_versements": {
     "initial_eur": 0,
-    "lissage_capital": "5000 EUR étalés sur 12 mois (416,67 EUR/mois la 1re année) — pas d'injection en une fois, choix de Luciano du 2026-07-28",
-    "mensuel_eur_annee1": 617,
-    "mensuel_eur_annees2a5": 200,
+    "plafond_mensuel_eur": 300,
+    "mensuel_eur": 300,
     "jour_dca": 5,
-    "repartition_annee1": {
-      "SP500": 401,
-      "NDX": 154,
-      "SPCX": 62
+    "repartition_mensuelle": {
+      "SP500": 195,
+      "NDX": 75,
+      "SPCX": 30
     },
-    "repartition_annees2a5": {
-      "SP500": 130,
-      "NDX": 50,
-      "SPCX": 20
-    },
+    "note": "Plafond fixé par Luciano le 2026-07-28 : jamais plus de 300 EUR/mois, aucune injection de capital",
     "note_spcx": "Ligne SPCX démarrée après le 2026-08-06 (lock-up)"
   },
   "regles": {
@@ -77,11 +72,11 @@
         "bull": 0.3
       }
     },
-    "total_investi": 17000,
+    "total_investi": 18000,
     "valeur_finale": {
-      "bear": 17062,
-      "base": 21520,
-      "bull": 25902
+      "bear": 18029,
+      "base": 21785,
+      "bull": 25298
     },
     "evolution_annuelle": {
       "annees": [
@@ -94,38 +89,37 @@
       ],
       "investi": [
         0,
-        7400,
-        9800,
-        12200,
-        14600,
-        17000
+        3600,
+        7200,
+        10800,
+        14400,
+        18000
       ],
       "bear": [
         0,
-        7392,
-        9783,
-        12189,
-        14615,
-        17062
+        3596,
+        7189,
+        10787,
+        14399,
+        18029
       ],
       "base": [
         0,
-        7661,
-        10744,
-        14068,
-        17653,
-        21520
+        3727,
+        7745,
+        12077,
+        16748,
+        21785
       ],
       "bull": [
         0,
-        7851,
-        11479,
-        15632,
-        20403,
-        25902
+        3819,
+        8165,
+        13122,
+        18792,
+        25298
       ]
-    },
-    "cout_du_lissage_vs_lump_sum_base": 290
+    }
   },
   "positions": [],
   "historique_suivis": [],

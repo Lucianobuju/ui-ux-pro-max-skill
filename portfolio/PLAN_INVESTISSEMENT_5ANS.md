@@ -13,28 +13,25 @@
 
 Chevauchement assumé : ~80 % du Nasdaq-100 est dans le S&P 500 ; SPCX intégrera probablement le Nasdaq-100. Exposition réelle mega-caps tech ≈ 45-50 %.
 
-## 2. Versements (scénario C, entrée 100 % lissée — décision du 28/07/2026)
+## 2. Versements (plafond : 300 €/mois, décision du 28/07/2026)
 
-Pas d'injection de capital en une fois : les 5 000 € sont **étalés sur les 12 premiers mois**.
+DCA pur, aucune injection de capital, jamais plus de 300 € par mois.
 
-- **Année 1 : 617 €/mois** le 5 du mois (200 € de plan + 416,67 € de capital lissé) → 401 € ESE / 154 € PUST / 62 € SPCX
-- **Années 2 à 5 : 200 €/mois** → 130 € ESE / 50 € PUST / 20 € SPCX (fractionné)
+- **300 €/mois le 5 du mois** : 195 € ESE / 75 € PUST / 30 € SPCX (fractionné)
 - Ligne SPCX démarrée **après le 6 août 2026** (résultats T2 le 4/08, expiration lock-up le 6/08)
-- Total investi sur 5 ans : **17 000 €**
+- Total investi sur 5 ans : **18 000 €**
 
-Coût du lissage vs injection immédiate : ~290 € d'espérance en scénario de base — le prix de la sérénité, assumé. Variantes : A (100 €/mois → 85 € ESE + 15 € SPCX) · B (300 €/mois → 190/80/30)
-
-## 3. Projections à 5 ans (scénario C lissé)
+## 3. Projections à 5 ans (300 €/mois)
 
 Hypothèses annuelles : S&P 500 2/7/11 % · Nasdaq-100 0/9/14 % · SPCX −15/+10/+30 % (bear/base/bull)
 
 | Scénario | Valeur 2031 | Gain | Performance |
 |---|---|---|---|
-| 🐻 Bear | 17 062 € | +62 € | +0,4 % |
-| ⚖️ Base | **21 520 €** | **+4 520 €** | **+26,6 %** |
-| 🚀 Bull | 25 902 € | +8 902 € | +52,4 % |
+| 🐻 Bear | 18 029 € | +29 € | +0,2 % |
+| ⚖️ Base | **21 785 €** | **+3 785 €** | **+21,0 %** |
+| 🚀 Bull | 25 298 € | +7 298 € | +40,5 % |
 
-Évolution annuelle (base) : 0 → 7 661 → 10 744 → 14 068 → 17 653 → **21 520 €**
+Évolution annuelle (base) : 0 → 3 727 → 7 745 → 12 077 → 16 748 → **21 785 €**
 
 ## 4. Règles de discipline (non négociables)
 
