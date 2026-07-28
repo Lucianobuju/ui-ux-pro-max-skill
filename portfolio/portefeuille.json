@@ -6,7 +6,7 @@
     "scenario_budget": "B-300-World",
     "devise_reference": "EUR",
     "avertissement": "Projections = scénarios, pas des promesses. Aucun rendement garanti.",
-    "statut": "VERROUILLÉ v1.0 — 2026-07-28. Toute modification d'allocation exige une décision explicite de Luciano."
+    "statut": "VERROUILLÉ v1.0 — 2026-07-28. Exécution précisée (eToro pour SPCX, PEA pour indices). Toute modification d'allocation exige une décision explicite de Luciano."
   },
   "allocation_cible": {
     "WORLD": {
@@ -132,5 +132,22 @@
     "spcx_resultats_t2": "2026-08-04",
     "flat_tax_cto": 0.314,
     "ps_pea": 0.186
+  },
+  "execution_courtiers": {
+    "decision": "2026-07-28 — Luciano utilise eToro",
+    "SPCX": {
+      "courtier": "eToro",
+      "regles": [
+        "achat action réelle uniquement (levier x1, JAMAIS de CFD)",
+        "eToro Money activé pour déposer en EUR sans frais de change (sinon 0,5-1,5% via pivot USD)",
+        "courtier étranger: formulaire 3916 annuel obligatoire, pas d'IFU (calcul manuel 2074)",
+        "noter le taux EUR/USD à chaque achat"
+      ]
+    },
+    "WORLD_et_NDX": {
+      "courtier": "PEA à ouvrir chez Bourse Direct / Fortuneo / BoursoBank",
+      "raison": "eToro ne propose pas de PEA — passer les indices en CTO eToro coûterait ~490-670 EUR sur 5 ans (impôt 31,4% vs 18,6% + frais de change USD)",
+      "statut": "EN ATTENTE D'OUVERTURE — l'horloge des 5 ans du PEA démarre au premier versement"
+    }
   }
 }
