@@ -3,17 +3,18 @@
     "objectif": "Rentabilité maximale à horizon 5 ans (juillet 2031)",
     "cree_le": "2026-07-28",
     "horizon_fin": "2031-07-31",
-    "scenario_budget": "B-300",
+    "scenario_budget": "B-300-World",
     "devise_reference": "EUR",
-    "avertissement": "Projections = scénarios, pas des promesses. Aucun rendement garanti."
+    "avertissement": "Projections = scénarios, pas des promesses. Aucun rendement garanti.",
+    "statut": "VERROUILLÉ v1.0 — 2026-07-28. Toute modification d'allocation exige une décision explicite de Luciano."
   },
   "allocation_cible": {
-    "SP500": {
+    "WORLD": {
       "poids": 0.65,
-      "support": "BNP Easy S&P 500 ESE",
-      "isin": "FR0011550185",
+      "support": "iShares MSCI World Swap PEA (WPEA)",
+      "isin": "IE0002XZSHO1",
       "enveloppe": "PEA",
-      "ter": 0.0014
+      "ter": 0.002
     },
     "NDX": {
       "poids": 0.25,
@@ -36,12 +37,13 @@
     "mensuel_eur": 300,
     "jour_dca": 5,
     "repartition_mensuelle": {
-      "SP500": 195,
+      "WORLD": 195,
       "NDX": 75,
       "SPCX": 30
     },
     "note": "Plafond fixé par Luciano le 2026-07-28 : jamais plus de 300 EUR/mois, aucune injection de capital",
-    "note_spcx": "Ligne SPCX démarrée après le 2026-08-06 (lock-up)"
+    "note_spcx": "Ligne SPCX démarrée après le 2026-08-06 (lock-up)",
+    "note_world": "WPEA remplace ESE comme coeur (S&P 500 déjà ~70% du World — redondance évitée). Part WPEA ~5-6 EUR: DCA au centime près."
   },
   "regles": {
     "spcx_poids_max": 0.12,
@@ -56,10 +58,10 @@
   },
   "projections_5ans_eur": {
     "hypotheses_annuelles": {
-      "SP500": {
-        "bear": 0.02,
-        "base": 0.07,
-        "bull": 0.11
+      "WORLD": {
+        "bear": 0.015,
+        "base": 0.065,
+        "bull": 0.1
       },
       "NDX": {
         "bear": 0.0,
@@ -74,9 +76,9 @@
     },
     "total_investi": 18000,
     "valeur_finale": {
-      "bear": 18029,
-      "base": 21785,
-      "bull": 25298
+      "bear": 17880,
+      "base": 21617,
+      "bull": 24933
     },
     "evolution_annuelle": {
       "annees": [
@@ -97,27 +99,27 @@
       ],
       "bear": [
         0,
-        3596,
-        7189,
-        10787,
-        14399,
-        18029
+        3591,
+        7166,
+        10735,
+        14304,
+        17880
       ],
       "base": [
         0,
-        3727,
-        7745,
-        12077,
-        16748,
-        21785
+        3722,
+        7722,
+        12022,
+        16646,
+        21617
       ],
       "bull": [
         0,
-        3819,
-        8165,
-        13122,
-        18792,
-        25298
+        3809,
+        8118,
+        13008,
+        18575,
+        24933
       ]
     }
   },
