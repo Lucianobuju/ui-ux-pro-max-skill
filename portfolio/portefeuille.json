@@ -134,7 +134,55 @@
     }
   },
   "positions": [],
-  "historique_suivis": [],
+  "historique_suivis": [
+    {
+      "date": "2026-07-29",
+      "type": "baseline_pre_demarrage",
+      "note": "Premier suivi officiel du plan verrouillé v1.0 — ligne de base à J-10 du démarrage (07-08/08/2026). Aucune position ouverte, aucun capital investi.",
+      "cours_reference": {
+        "SPCX_usd": {
+          "dernier": 116.41,
+          "cloture_precedente": 113.5,
+          "date_cotation": "2026-07-28",
+          "range_jour": [107.01, 118.13],
+          "range_52s": [107.01, 225.64],
+          "vs_prix_ref_114": "+2.1%",
+          "vs_prix_ipo_135": "-13.8%",
+          "drawdown_depuis_plus_haut_52s": "-48.4%",
+          "source": "Yahoo Finance / Nasdaq / CNBC (via recherche web du 2026-07-29)"
+        },
+        "SPCX_eur_equivalent": 102.24,
+        "WPEA_eur": {
+          "vl": 6.85,
+          "date_cotation": "2026-07-28",
+          "range_52s": [5.6, 6.93],
+          "source": "BlackRock/iShares via Boursorama, Zonebourse (recherche web du 2026-07-29)"
+        },
+        "PUST_eur": {
+          "dernier": 100.5,
+          "date_cotation": "2026-07-29 (séance en cours, Bourse Direct)",
+          "incertitude": "Une source secondaire affichait 103.90 EUR (donnée probablement antérieure au 24/07) — 100.50 retenu comme cotation la plus récente. À confirmer à la clôture.",
+          "source": "Bourse Direct (recherche web du 2026-07-29)"
+        },
+        "EURUSD": {
+          "taux": 1.1386,
+          "date": "2026-07-29",
+          "source": "exchangerates.org.uk / tradingeconomics (recherche web du 2026-07-29)"
+        }
+      },
+      "evenements_a_venir": [
+        "2026-08-04 (après clôture US): premiers résultats trimestriels SPCX (T2 2026)",
+        "2026-08-06: expiration lock-up SPCX — ~911,5 M titres (~116 Md$), jusqu'à 20% des titres restreints libérés (CNBC, Yahoo Finance, Motley Fool)",
+        "Tranches de 7% supplémentaires: 31/08, 10/09, 25/09, 10/10, 25/10/2026; tranche de 28% deux jours après les résultats T3; flottant complet au 09/12/2026",
+        "Titres Musk et dirigeants clés: lock-up 1 an jusqu'au 2027-06-12 (précision vs 'mi-2027' du plan)",
+        "Inclusion indicielle SPCX: aucune annonce trouvée au 2026-07-29"
+      ],
+      "points_pour_conseiller": [
+        "SPCX cote ~116 USD, -48% sous son plus haut 52 semaines (225.64) et sous son prix d'IPO (135) — contexte de forte volatilité attendue autour du 04-06/08, cohérent avec le choix du plan de démarrer après ces deux événements",
+        "Cours PUST à reconfirmer à la clôture (écart entre sources)"
+      ]
+    }
+  ],
   "references_marche": {
     "spcx_prix_ref_usd": 114,
     "spcx_prix_ipo_usd": 135,
