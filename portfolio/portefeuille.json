@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "objectif": "Rentabilité maximale à horizon 5 ans (juillet 2031)",
+    "cree_le": "2026-07-28",
+    "horizon_fin": "2031-07-31",
+    "scenario_budget": "B-300-World",
+    "devise_reference": "EUR",
+    "avertissement": "Projections = scénarios, pas des promesses. Aucun rendement garanti.",
+    "statut": "VERROUILLÉ v1.0 — 2026-07-28. Exécution précisée (eToro pour SPCX, PEA pour indices). Toute modification d'allocation exige une décision explicite de Luciano.",
+    "demarrage_effectif": "2026-08-07/08 — premiers achats (post-résultats T2 du 4/08 et lock-up SPCX du 6/08); DCA le 5 du mois à partir de septembre 2026",
+    "residence_fiscale": {
+      "zone": "Martinique (DROM, France)",
+      "implications": [
+        "PEA, CTO, PFU: règles identiques à la métropole",
+        "Réduction d'impôt DOM de 30% (plafonnée ~2 450 EUR) sur l'IR au barème (art. 197-I-3 CGI) — ne s'applique PAS au PFU 12,8%: l'arbitrage PFU vs barème (case 2OP) doit être re-simulé chaque année par expert-fiscalite, le barème devenant plus compétitif en DOM",
+        "Fuseau UTC-4: les ordres US s'exécutent en après-midi locale, le marché Paris ferme à 11h30 locale"
+      ],
+      "note_confidentialite": "Adresse postale volontairement non stockée dans le dépôt"
+    }
+  },
+  "allocation_cible": {
+    "WORLD": {
+      "poids": 0.65,
+      "support": "iShares MSCI World Swap PEA (WPEA)",
+      "isin": "IE0002XZSHO1",
+      "enveloppe": "PEA",
+      "ter": 0.002
+    },
+    "NDX": {
+      "poids": 0.25,
+      "support": "Amundi PEA Nasdaq-100 PUST",
+      "isin": "FR0011871110",
+      "enveloppe": "PEA",
+      "ter": 0.003
+    },
+    "SPCX": {
+      "poids": 0.1,
+      "support": "SpaceX (titre vif)",
+      "ticker": "SPCX",
+      "enveloppe": "CTO",
+      "place": "Nasdaq"
+    }
+  },
+  "plan_versements": {
+    "initial_eur": 0,
+    "plafond_mensuel_eur": 300,
+    "mensuel_eur": 300,
+    "jour_dca": 5,
+    "repartition_mensuelle": {
+      "WORLD": 195,
+      "NDX": 75,
+      "SPCX": 30
+    },
+    "note": "Plafond fixé par Luciano le 2026-07-28 : jamais plus de 300 EUR/mois, aucune injection de capital",
+    "note_spcx": "Ligne SPCX démarrée après le 2026-08-06 (lock-up)",
+    "note_world": "WPEA remplace ESE comme coeur (S&P 500 déjà ~70% du World — redondance évitée). Part WPEA ~5-6 EUR: DCA au centime près."
+  },
+  "regles": {
+    "spcx_poids_max": 0.12,
+    "reequilibrage": "annuel en janvier, ou si SPCX > 12% de la poche",
+    "interdits": [
+      "suspendre le DCA en baisse",
+      "vente panique",
+      "moyenne à la baisse sur SPCX si thèse cassée",
+      "levier"
+    ],
+    "kill_switch_spcx": "Thèse cassée si: échecs Starship répétés + marges Starlink en dégradation 2 trimestres consécutifs"
+  },
+  "projections_5ans_eur": {
+    "hypotheses_annuelles": {
+      "WORLD": {
+        "bear": 0.015,
+        "base": 0.065,
+        "bull": 0.1
+      },
+      "NDX": {
+        "bear": 0.0,
+        "base": 0.09,
+        "bull": 0.14
+      },
+      "SPCX": {
+        "bear": -0.15,
+        "base": 0.1,
+        "bull": 0.3
+      }
+    },
+    "total_investi": 18000,
+    "valeur_finale": {
+      "bear": 17880,
+      "base": 21617,
+      "bull": 24933
+    },
+    "evolution_annuelle": {
+      "annees": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "investi": [
+        0,
+        3600,
+        7200,
+        10800,
+        14400,
+        18000
+      ],
+      "bear": [
+        0,
+        3591,
+        7166,
+        10735,
+        14304,
+        17880
+      ],
+      "base": [
+        0,
+        3722,
+        7722,
+        12022,
+        16646,
+        21617
+      ],
+      "bull": [
+        0,
+        3809,
+        8118,
+        13008,
+        18575,
+        24933
+      ]
+    }
+  },
+  "positions": [],
+  "historique_suivis": [
+    {
+      "date": "2026-07-29",
+      "type": "baseline_pre_demarrage",
+      "note": "Premier suivi officiel du plan verrouillé v1.0 — ligne de base à J-10 du démarrage (07-08/08/2026). Aucune position ouverte, aucun capital investi.",
+      "cours_reference": {
+        "SPCX_usd": {
+          "dernier": 116.41,
+          "cloture_precedente": 113.5,
+          "date_cotation": "2026-07-28",
+          "range_jour": [107.01, 118.13],
+          "range_52s": [107.01, 225.64],
+          "vs_prix_ref_114": "+2.1%",
+          "vs_prix_ipo_135": "-13.8%",
+          "drawdown_depuis_plus_haut_52s": "-48.4%",
+          "source": "Yahoo Finance / Nasdaq / CNBC (via recherche web du 2026-07-29)"
+        },
+        "SPCX_eur_equivalent": 102.24,
+        "WPEA_eur": {
+          "vl": 6.85,
+          "date_cotation": "2026-07-28",
+          "range_52s": [5.6, 6.93],
+          "source": "BlackRock/iShares via Boursorama, Zonebourse (recherche web du 2026-07-29)"
+        },
+        "PUST_eur": {
+          "dernier": 100.5,
+          "date_cotation": "2026-07-29 (séance en cours, Bourse Direct)",
+          "incertitude": "Une source secondaire affichait 103.90 EUR (donnée probablement antérieure au 24/07) — 100.50 retenu comme cotation la plus récente. À confirmer à la clôture.",
+          "source": "Bourse Direct (recherche web du 2026-07-29)"
+        },
+        "EURUSD": {
+          "taux": 1.1386,
+          "date": "2026-07-29",
+          "source": "exchangerates.org.uk / tradingeconomics (recherche web du 2026-07-29)"
+        }
+      },
+      "evenements_a_venir": [
+        "2026-08-04 (après clôture US): premiers résultats trimestriels SPCX (T2 2026)",
+        "2026-08-06: expiration lock-up SPCX — ~911,5 M titres (~116 Md$), jusqu'à 20% des titres restreints libérés (CNBC, Yahoo Finance, Motley Fool)",
+        "Tranches de 7% supplémentaires: 31/08, 10/09, 25/09, 10/10, 25/10/2026; tranche de 28% deux jours après les résultats T3; flottant complet au 09/12/2026",
+        "Titres Musk et dirigeants clés: lock-up 1 an jusqu'au 2027-06-12 (précision vs 'mi-2027' du plan)",
+        "Inclusion indicielle SPCX: aucune annonce trouvée au 2026-07-29"
+      ],
+      "points_pour_conseiller": [
+        "SPCX cote ~116 USD, -48% sous son plus haut 52 semaines (225.64) et sous son prix d'IPO (135) — contexte de forte volatilité attendue autour du 04-06/08, cohérent avec le choix du plan de démarrer après ces deux événements",
+        "Cours PUST à reconfirmer à la clôture (écart entre sources)"
+      ]
+    }
+  ],
+  "references_marche": {
+    "spcx_prix_ref_usd": 114,
+    "spcx_prix_ipo_usd": 135,
+    "spcx_lockup": "2026-08-06",
+    "spcx_resultats_t2": "2026-08-04",
+    "flat_tax_cto": 0.314,
+    "ps_pea": 0.186
+  },
+  "execution_courtiers": {
+    "decision": "2026-07-28 — Luciano utilise eToro",
+    "SPCX": {
+      "courtier": "eToro",
+      "regles": [
+        "achat action réelle uniquement (levier x1, JAMAIS de CFD)",
+        "eToro Money activé pour déposer en EUR sans frais de change (sinon 0,5-1,5% via pivot USD)",
+        "courtier étranger: formulaire 3916 annuel obligatoire, pas d'IFU (calcul manuel 2074)",
+        "noter le taux EUR/USD à chaque achat"
+      ]
+    },
+    "WORLD_et_NDX": {
+      "courtier": "PEA à ouvrir chez Bourse Direct / Fortuneo / BoursoBank",
+      "raison": "eToro ne propose pas de PEA — passer les indices en CTO eToro coûterait ~490-670 EUR sur 5 ans (impôt 31,4% vs 18,6% + frais de change USD)",
+      "statut": "EN ATTENTE D'OUVERTURE — l'horloge des 5 ans du PEA démarre au premier versement"
+    }
+  }
+}
